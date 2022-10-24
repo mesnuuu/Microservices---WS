@@ -9,6 +9,26 @@
             "projectName": "university-monolithic-app",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-AddressServiceApplication<address-service>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.mesnu.cloud.addressservice.AddressServiceApplication",
+            "projectName": "address-service",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-UniversityMonolithicApplication<university-monolithic-app>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.mesnu.app.UniversityMonolithicApplication",
+            "projectName": "university-monolithic-app",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }

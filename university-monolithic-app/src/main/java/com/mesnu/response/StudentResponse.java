@@ -1,6 +1,6 @@
-package com.infybuzz.response;
+package com.mesnu.response;
 
-import com.infybuzz.entity.Student;
+import com.mesnu.entity.Student;
 
 import lombok.Getter;
 import lombok.Setter;

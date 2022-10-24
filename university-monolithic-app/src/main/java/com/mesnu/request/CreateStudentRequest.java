@@ -1,4 +1,4 @@
-package com.infybuzz.request;
+package com.mesnu.request;
 
 
 import lombok.Getter;

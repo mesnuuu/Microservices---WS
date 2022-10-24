@@ -1,14 +1,14 @@
-package com.infybuzz.service;
+package com.mesnu.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.infybuzz.entity.Address;
-import com.infybuzz.entity.Student;
-import com.infybuzz.repository.AddressRepository;
-import com.infybuzz.repository.StudentRepository;
-import com.infybuzz.request.CreateStudentRequest;
-import com.infybuzz.response.StudentResponse;
+import com.mesnu.entity.Address;
+import com.mesnu.entity.Student;
+import com.mesnu.repository.AddressRepository;
+import com.mesnu.repository.StudentRepository;
+import com.mesnu.request.CreateStudentRequest;
+import com.mesnu.response.StudentResponse;
 
 @Service
 public class StudentService {

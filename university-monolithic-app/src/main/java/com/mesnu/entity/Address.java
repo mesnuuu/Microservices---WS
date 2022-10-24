@@ -1,4 +1,4 @@
-package com.infybuzz.entity;
+package com.mesnu.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
