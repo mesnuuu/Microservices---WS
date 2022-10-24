@@ -1,4 +1,4 @@
-package com.mesnu.cloud.addressservice;
+package com.mesnu.addressservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
