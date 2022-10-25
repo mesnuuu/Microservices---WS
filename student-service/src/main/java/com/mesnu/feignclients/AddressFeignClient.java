@@ -6,9 +6,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import com.mesnu.response.AddressResponse;
 
-@FeignClient(value = "address-feign-client", 
-               url = "${address.service.url}", 
-              path = "/api/address")
+@FeignClient(value = "address-service", path = "/api/address")
 
 public interface AddressFeignClient {
 
