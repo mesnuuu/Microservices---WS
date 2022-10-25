@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 
 import com.mesnu.entity.Student;
+import com.mesnu.feignclients.AddressFeignClient;
 import com.mesnu.repository.StudentRepository;
 import com.mesnu.request.CreateStudentRequest;
 import com.mesnu.response.AddressResponse;
@@ -25,6 +26,9 @@ public class StudentService {
     @Autowired
     WebClient webClient;
 
+    @Autowired
+	AddressFeignClient addressFeignClient;
+
     Logger logger = LoggerFactory.getLogger(StudentService.class);
 
     public StudentResponse getById(long id) {
@@ -33,7 +37,12 @@ public class StudentService {
 
         StudentResponse studentResponse = new StudentResponse(student);
 
-        studentResponse.setAddressResponse(getAddressById(student.getAddressId()));
+        //   Web Client code
+        // studentResponse.setAddressResponse(getAddressById(student.getAddressId()));
+
+        // Open Feign Client code
+        studentResponse
+                .setAddressResponse(addressFeignClient.getById(student.getAddressId()));
 
         return studentResponse;
     }
@@ -50,7 +59,12 @@ public class StudentService {
 
         StudentResponse studentResponse = new StudentResponse(student);
 
-        studentResponse.setAddressResponse(getAddressById(student.getAddressId()));
+        //   Web Client code
+        // studentResponse.setAddressResponse(getAddressById(student.getAddressId()));
+
+       // Open Feign Client code
+        studentResponse
+                    .setAddressResponse(addressFeignClient.getById(student.getAddressId()));
 
         return studentResponse;
     }
