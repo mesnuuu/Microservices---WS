@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch EurekaServerApplication",
+            "request": "launch",
+            "mainClass": "com.mesnu.app.EurekaServerApplication",
+            "projectName": "eureka-server"
+        },
+        {
+            "type": "java",
             "name": "Launch AddressServiceApplication",
             "request": "launch",
             "mainClass": "com.mesnu.app.AddressServiceApplication",
