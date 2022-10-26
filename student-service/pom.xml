@@ -22,8 +22,15 @@
 
 	<dependencies>
 
-		<!-- Eureka Client  -->
-		
+		<!-- Cloud LoadBalancer -->
+
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-loadbalancer</artifactId>
+		</dependency>
+
+		<!-- Eureka Client -->
+
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
