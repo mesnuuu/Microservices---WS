@@ -12,7 +12,9 @@
             "name": "Launch AddressServiceApplication",
             "request": "launch",
             "mainClass": "com.mesnu.app.AddressServiceApplication",
-            "projectName": "address-service"
+            "projectName": "address-service",
+            "noDebug": true,
+            "__progressId": "def3a8f5-56dd-48e5-9e2d-93650cf88e85"
         },
         {
             "type": "java",
@@ -58,6 +60,16 @@
             "cwd": "${workspaceFolder}",
             "mainClass": "com.mesnu.studentservice.StudentServiceApplication",
             "projectName": "student-service",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ApiGatewayApplication<api-gateway>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.mesnu.apigateway.ApiGatewayApplication",
+            "projectName": "api-gateway",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
         }
