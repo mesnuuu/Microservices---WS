@@ -21,7 +21,7 @@ public class Customfilter implements GlobalFilter{
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
 
-        // TODO Auto-generated method stub
+       
 
         ServerHttpRequest request = exchange.getRequest();
 
