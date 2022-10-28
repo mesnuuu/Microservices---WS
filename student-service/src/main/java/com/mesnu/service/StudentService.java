@@ -35,6 +35,8 @@ public class StudentService {
 
     public StudentResponse getById(long id) {
 
+        logger.info("Inside Student getById");
+
         Student student = studentRepository.findById(id).get();
 
         StudentResponse studentResponse = new StudentResponse(student);
