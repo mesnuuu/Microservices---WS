@@ -15,7 +15,7 @@
 	<name>university-monolithic-app</name>
 	<description>university-monolithic-app</description>
 	<properties>
-		<java.version>17</java.version>
+		<java.version>18</java.version>
 		<!-- <maven-jar-plugin.version>3.1.1</maven-jar-plugin.version> -->
 	</properties>
 	<dependencies>
